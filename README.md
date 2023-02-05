@@ -12,7 +12,7 @@
 
 Ещё у CMake есть свои переменные, как и у консоли, но нам пока нужна только одна:
 
-**CMAKE_CURRENT_SOURCE_DIR** — путь к директории, где лежит `CMakeLists.txt`
+**CMAKE_CURRENT_SOURCE_DIR** — путь к директории, где лежит `CMakeLists.txt`.
 
 **Процесс сборки** делится на два этапа:
 
@@ -21,13 +21,20 @@
 
 **Команды сборки:**
 
-**cmake -B build** — готовит файлы сборки и собирает их в папочку `build`.
+**cmake -B \<build_dir>** — готовит файлы сборки и собирает их в папочку `<build_dir>`.
 
-**cmake --build build** — на основе файлов из папки `build` собирает библиотеку/исполняемый файл.
+**cmake --build \<build_dir>** — на основе файлов из папки `<build_dir>` собирает библиотеку/исполняемый файл.
+
+Директорию для сборочных файлов обычно называем `build`:
+
+```sh
+$ cmake -B build
+$ cmake --build build
+```
 
 **Как писать эти ваши CMake файлы?**
 
-Очень просто. Рассмотрим структуру CMake файла для сборки некоторого исполняемого файла, использующего некую библиотеку:
+Очень просто. Рассмотрим структуру CMake файла для сборки некоторого исполняемого файла `app`, использующего некую библиотеку `library`:
 
 ```cmake
 cmake_minimum_required(VERSION 3.4)
@@ -39,7 +46,7 @@ cmake_minimum_required(VERSION 3.4)
 project(app)
 ```
 
-Задаём название проекта
+Задаём название проекта.
 
 ```cmake
 set(CMAKE_CXX_STANDARD 11)
@@ -56,7 +63,7 @@ add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../library library_dir)
 
 Здесь:
 
-**${CMAKE_CURRENT_SOURCE_DIR}/../library** — путь к директории с CMake файлом библиотеки
+**${CMAKE_CURRENT_SOURCE_DIR}/../library** — путь к директории с CMake файлом библиотеки.
 
 **library_dir** — под каким именем директория файлов сборки библиотеки будет записана в файлах сборки нашего исполняемого файла.
 
@@ -72,7 +79,7 @@ ${CMAKE_CURRENT_SOURCE_DIR}/../library
 )
 ```
 
-Открываем таргету доступ к директории `../library`. Там лежит какой-нибудь library.h — заголовочный файл библиотеки.
+Открываем таргету доступ к директории `../library`. Там лежит какой-нибудь `library.h` — заголовочный файл библиотеки.
 
 ```cmake
 target_link_libraries(app library)
@@ -80,6 +87,7 @@ target_link_libraries(app library)
 
 Подключаем библиотеку `library` к таргету `app`.
 
+___
 
 ## Laboratory work III
 
