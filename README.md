@@ -2,7 +2,7 @@
 
 ## Ход выполнения
 
-- Клонировал репозиторий от ЛР (лабораторной работы)  №4
+Клонировал репозиторий от ЛР (лабораторной работы)  №4
 
 ```console
 $ git clone https://github.com/3Artem99/lab040 lab06
@@ -18,25 +18,25 @@ remote: Total 124 (delta 56), reused 118 (delta 55), pack-reused 0
 Определение изменений: 100% (56/56), готово.
 ```
 
-- Переключился на репозиторий для ЛР №6
+Переключился на репозиторий для ЛР №6
 ```console
 $ git remote remove origin
 $ git remote add origin https://github.com/3Artem99/lab06
 ```
 
-- Создал файл CPackConfig.cmake
+Создал файл CPackConfig.cmake
 
 ```console
 $ touch CPackConfig.cmake
 ```
-- Удалил папку "hello_world_application" (она не нужна по заданию (Homework))
+Удалил папку "hello_world_application" (она не нужна по заданию (Homework))
 
 ```console 
 $ rm -rf hello_world_application/
 ```
 [Ссылка на задание](https://github.com/tp-labs/lab06)
 
-- Запушил недоделанную работу на гитхаб в ветку main
+Запушил недоделанную работу на гитхаб в ветку main
 
 ```console
 $ git add .
@@ -81,7 +81,7 @@ To https://github.com/3Artem99/lab06
  * [new branch]      main -> main
 ```
 
-- Изменил его (CPackConfig.cmake) Уже в гитхабе
+Изменил его (CPackConfig.cmake) Уже в гитхабе
 
 ```console
 include(InstallRequiredSystemLibraries)
@@ -104,7 +104,7 @@ set(CPACK_DEBIAN_PACKAGE_VERSION CPACK_PACKAGE_VERSION)
 include(CPack)
 ```
 
-- Перестроил файл CI.yml
+Перестроил файл CI.yml
 
 ```console
 include(InstallRequiredSystemLibraries)
@@ -127,7 +127,7 @@ set(CPACK_DEBIAN_PACKAGE_VERSION CPACK_PACKAGE_VERSION)
 include(CPack)
 ```
 
-- Совсем забыл про файл CMakeLists.txt
+Совсем забыл про файл CMakeLists.txt (Нужно было и его изменить)
 
 ```console
 cmake_minimum_required(VERSION 3.4)
@@ -150,3 +150,5 @@ target_link_libraries(solver solver_lib formatter_ex_lib formatter_lib)
 
 include(CPackConfig.cmake)
 ```
+___
+Это не первый репозиторий данной лабораторной работы. Предыдущие (неудачные) попытки её выполнить были удалены.
