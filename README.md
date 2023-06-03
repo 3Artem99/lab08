@@ -34,7 +34,7 @@ $ touch CPackConfig.cmake
 ```console 
 $ rm -rf hello_world_application/
 ```
-[![Markdown clickable image](/images/markdown.png "Click me!")]([https://google.com](https://github.com/tp-labs/lab06))
+[Ссылка на задание](https://github.com/tp-labs/lab06)
 
 Запушил недоделанную работу на гитхаб в ветку main
 
