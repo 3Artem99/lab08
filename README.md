@@ -39,8 +39,48 @@ $ rm -rf hello_world_application/
 Запушил недоделанную работу на гитхаб в ветку main
 
 ```console
+$ git add .
+$ git commit -m "added CPackConfig.cmake"
+```
+
+```console
+[main c3ab3e4] added CPackConfig.cmake
+ 3 files changed, 24 deletions(-)
+ create mode 100644 CPackConfig.cmake
+ delete mode 100644 hello_world_application/CMakeLists.txt
+ delete mode 100644 hello_world_application/hello_world.cpp
+```
+
+```console
+$ git add .
+$ git commit -m "edit readme.h"
+```
+
+```console
+[main c9f30cf] edit readme.h
+ 2 files changed, 33 insertions(+), 428 deletions(-)
+ create mode 100644 .README.h.swp
+ rewrite README.md (99%)
+```
+
+```console
 $ git push origin main
 ```
+
+```console
+Username for 'https://github.com': 3Artem99
+Password for 'https://3Artem99@github.com': 
+Перечисление объектов: 130, готово.
+Подсчет объектов: 100% (130/130), готово.
+При сжатии изменений используется до 4 потоков
+Сжатие объектов: 100% (66/66), готово.
+Запись объектов: 100% (130/130), 1.03 МиБ | 29.26 МиБ/с, готово.
+Всего 130 (изменений 58), повторно использовано 123 (изменений 56), повторно использовано пакетов 0
+remote: Resolving deltas: 100% (58/58), done.
+To https://github.com/3Artem99/lab06
+ * [new branch]      main -> main
+```
+
 Изменил его (CPackConfig.cmake)
 Уже в гитхабе
 
