@@ -186,6 +186,11 @@ ___
 
 ```console
 $ docker build -t logger .
+```
+<details><summary>ResultOfCommand</summary>
+  <p>
+  
+```sh
 Sending build context to Docker daemon  2.605MB
 Step 1/12 : FROM ubuntu:18.04
  ---> f9a80a55f492
@@ -268,6 +273,9 @@ Successfully built 048d5e329e63
 Successfully tagged logger:latest
 ```
 
+</p>
+</details>
+  
 ```console
 $ sudo docker images
 REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
