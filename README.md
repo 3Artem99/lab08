@@ -295,7 +295,7 @@ party
 ```console
 $ sudo docker inspect logger
 <details>
-<summary>Result of command</summary>
+<summary>Resultofcommand</summary>
 
 [
     {
