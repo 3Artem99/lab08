@@ -295,8 +295,8 @@ party
 ```console
 $ sudo docker inspect logger
 <details>
-
 <summary>Result of command</summary>
+
 [
     {
         "Id": "sha256:048d5e329e63d5563b768f8981797cac6c05956981ea58dea36c90a5989c8ad2",
@@ -407,6 +407,7 @@ $ sudo docker inspect logger
         }
     }
 ]
+
 </details>
 ```
 
