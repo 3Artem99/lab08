@@ -1,4 +1,4 @@
-## Лабораторная работа 6
+## Лабораторная работа 8
 
 ## Ход выполнения
 
@@ -422,4 +422,87 @@ second
 text
 third
 party
+```
+
+Пушу всё в репозиторий lab08
+```console
+$ git add .
+$ git commit -m "Lab08"
+<details>
+<p>
+<summary>Detail</summary>
+</p>
+[main d53c5a6] Lab08
+ 56 files changed, 4749 insertions(+), 173 deletions(-)
+ rewrite CMakeLists.txt (77%)
+ create mode 100644 Dockerfile
+ rewrite README.md (88%)
+ create mode 100644 build/CMakeCache.txt
+ create mode 100644 build/CMakeFiles/3.22.1/CMakeCCompiler.cmake
+ create mode 100644 build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake
+ create mode 100755 build/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_C.bin
+ create mode 100755 build/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_CXX.bin
+ create mode 100644 build/CMakeFiles/3.22.1/CMakeSystem.cmake
+ create mode 100644 build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c
+ create mode 100755 build/CMakeFiles/3.22.1/CompilerIdC/a.out
+ create mode 100644 build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp
+ create mode 100755 build/CMakeFiles/3.22.1/CompilerIdCXX/a.out
+ create mode 100644 build/CMakeFiles/CMakeDirectoryInformation.cmake
+ create mode 100644 build/CMakeFiles/CMakeOutput.log
+ create mode 100644 build/CMakeFiles/Export/cmake/print-config-noconfig.cmake
+ create mode 100644 build/CMakeFiles/Export/cmake/print-config.cmake
+ create mode 100644 build/CMakeFiles/Makefile.cmake
+ create mode 100644 build/CMakeFiles/Makefile2
+ create mode 100644 build/CMakeFiles/TargetDirectories.txt
+ create mode 100644 build/CMakeFiles/cmake.check_cache
+ create mode 100644 build/CMakeFiles/demo.dir/DependInfo.cmake
+ create mode 100644 build/CMakeFiles/demo.dir/build.make
+ create mode 100644 build/CMakeFiles/demo.dir/cmake_clean.cmake
+ create mode 100644 build/CMakeFiles/demo.dir/compiler_depend.make
+ create mode 100644 build/CMakeFiles/demo.dir/compiler_depend.ts
+ create mode 100644 build/CMakeFiles/demo.dir/demo/main.cpp.o
+ create mode 100644 build/CMakeFiles/demo.dir/demo/main.cpp.o.d
+ create mode 100644 build/CMakeFiles/demo.dir/depend.make
+ create mode 100644 build/CMakeFiles/demo.dir/flags.make
+ create mode 100644 build/CMakeFiles/demo.dir/link.txt
+ create mode 100644 build/CMakeFiles/demo.dir/progress.make
+ create mode 100644 build/CMakeFiles/print.dir/DependInfo.cmake
+ create mode 100644 build/CMakeFiles/print.dir/build.make
+ create mode 100644 build/CMakeFiles/print.dir/cmake_clean.cmake
+ create mode 100644 build/CMakeFiles/print.dir/cmake_clean_target.cmake
+ create mode 100644 build/CMakeFiles/print.dir/compiler_depend.make
+ create mode 100644 build/CMakeFiles/print.dir/compiler_depend.ts
+ create mode 100644 build/CMakeFiles/print.dir/depend.make
+ create mode 100644 build/CMakeFiles/print.dir/flags.make
+ create mode 100644 build/CMakeFiles/print.dir/link.txt
+ create mode 100644 build/CMakeFiles/print.dir/progress.make
+ create mode 100644 build/CMakeFiles/print.dir/sources/print.cpp.o
+ create mode 100644 build/CMakeFiles/print.dir/sources/print.cpp.o.d
+ create mode 100644 build/CMakeFiles/progress.marks
+ create mode 100644 build/CPackConfig.cmake
+ create mode 100644 build/CPackSourceConfig.cmake
+ create mode 100644 build/Makefile
+ create mode 100644 build/cmake_install.cmake
+ create mode 100755 build/demo
+ create mode 100644 build/libprint.a
+ create mode 100644 demo/main.cpp
+ create mode 100644 include/print.hpp
+ create mode 100644 logs/log.txt
+ create mode 100644 sources/activate
+ create mode 100644 sources/print.cpp
+ </details>
+```
+```console
+$ git push origin main
+Username for 'https://github.com': 3Artem99
+Password for 'https://3Artem99@github.com': 
+Перечисление объектов: 75, готово.
+Подсчет объектов: 100% (75/75), готово.
+При сжатии изменений используется до 4 потоков
+Сжатие объектов: 100% (63/63), готово.
+Запись объектов: 100% (72/72), 50.15 КиБ | 3.58 МиБ/с, готово.
+Всего 72 (изменений 11), повторно использовано 0 (изменений 0), повторно использовано пакетов 0
+remote: Resolving deltas: 100% (11/11), completed with 1 local object.
+To https://github.com/3Artem99/lab06
+   08db504..d53c5a6  main -> main
 ```
