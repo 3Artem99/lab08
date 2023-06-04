@@ -295,9 +295,8 @@ party
 ```console
 $ sudo docker inspect logger
 <details>
-<p>
+
 <summary>Result of command</summary>
-</p>
 [
     {
         "Id": "sha256:048d5e329e63d5563b768f8981797cac6c05956981ea58dea36c90a5989c8ad2",
@@ -429,9 +428,8 @@ party
 $ git add .
 $ git commit -m "Lab08"
 <details>
-<p>
+
 <summary>Detail</summary>
-</p>
 [main d53c5a6] Lab08
  56 files changed, 4749 insertions(+), 173 deletions(-)
  rewrite CMakeLists.txt (77%)
