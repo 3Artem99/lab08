@@ -295,7 +295,7 @@ party
 ```console
 $ sudo docker inspect logger
 <details>
-<summary>Resultofcommand</summary>
+    <summary><u>nested</u> <b>stuff</b> (<i>click to expand</i>)</summary>
 
 [
     {
